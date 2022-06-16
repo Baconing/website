@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
+body {
+    font-family: "Fascinate", cursive;
+    font-weight: bolder;
+    color: white;
+    background-color: blue;
+    user-select: none;
+}
+
+#main-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#nav {
+    display: absolute;
+    width: 99%;
+    text-align: left;
+    padding-left: .5%;
+    padding-top: .01%;
+    padding-bottom: .01%;
+    border-radius: 25px;
+    border-bottom-left-radius: 0%;
+    border: 5px white solid;
+    background-color: blue;
+    color: white;
+    animation: spin 3s linear 0s 2 normal none;
+}
+#nav-text {
+    display: absolute;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding-left: 1%;
+    line-height: 100%;
+    top: 4.5%;
+}
+
+#nav-text-current {
+    display: absolute;
+    width: 100%;
+    border: 5px greenyellow solid;
+    border-radius: 50;
+    color: white;
+    padding-left: 1%;
+    line-height: 100%;
+    top: 4.5%;
+}
+
+#nav li {
+    display: inline;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    border-top-left-radius: 0%;
+    animation: spin 0.1s linear 0s infinite normal none;
+}
+
+#logo-current {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    border-top-left-radius: 0%;
+    border: 5px greenyellow solid;
+    animation: spin 0.1s linear 0s infinite normal none;
+}
+
+
+
+#animate {
+    animation: spin 3s linear 0s 2 normal none;
+}
+
+#spin {
+    animation: spin 3s linear 0s infinite normal none;
+}
+
+/* @keyframes spin {
+    0.0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
