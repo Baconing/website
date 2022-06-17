@@ -4,7 +4,7 @@ body {
     font-family: "Fascinate", cursive;
     font-weight: bolder;
     color: white;
-    background-color: blue;
+    background-color: teal;
     user-select: none;
 }
 
@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 2%;
 }
 
 #nav {
@@ -28,7 +29,7 @@ body {
     border-radius: 25px;
     border-bottom-left-radius: 0%;
     border: 5px white solid;
-    background-color: blue;
+    background-color: teal;
     color: white;
     animation: spin 3s linear 0s 2 normal none;
 }
@@ -40,6 +41,11 @@ body {
     padding-left: 1%;
     line-height: 100%;
     top: 4.5%;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#nav-text:hover {
+    opacity: 0.5;
 }
 
 #nav-text-current {
@@ -51,6 +57,11 @@ body {
     padding-left: 1%;
     line-height: 100%;
     top: 4.5%;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#nav-text-current:hover {
+    opacity: 0.5;
 }
 
 #nav li {
@@ -63,6 +74,11 @@ body {
     border-radius: 15px;
     border-top-left-radius: 0%;
     animation: spin 0.1s linear 0s infinite normal none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#logo:hover {
+    opacity: 0.5;
 }
 
 #logo-current {
@@ -72,9 +88,31 @@ body {
     border-top-left-radius: 0%;
     border: 5px greenyellow solid;
     animation: spin 0.1s linear 0s infinite normal none;
+    transition: opacity 0.2s ease-in-out;
 }
 
+#logo-current:hover {
+    opacity: 0.5;
+}
 
+#table-row {
+    margin: 5px;
+}
+
+#table-image {
+    width: 10em;
+    height: 10em;
+    border-radius: 15px;
+    animation: spin 3s linear 0s 2 normal none;
+    transition: all 0.2s ease-in-out;
+    margin: 5px;
+}
+
+#table-image:hover {
+    opacity: .5;
+    width: 11em;
+    height: 11em;
+}
 
 #animate {
     animation: spin 3s linear 0s 2 normal none;
@@ -82,6 +120,10 @@ body {
 
 #spin {
     animation: spin 3s linear 0s infinite normal none;
+}
+
+#footer-text {
+    text-align: center;
 }
 
 /* @keyframes spin {

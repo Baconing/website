@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <script src="https://kit.fontawesome.com/0357de3523.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
     </head>
     <body>
         <div id="container">
@@ -20,9 +21,38 @@
                 </div>
             </div>
             <div id="main-content">
-                <div id="main-text">
-                    <p id="animate"><h1 id="animate"></h1></p>
-                </div>
+                <script>
+                    (function createContent () {
+                        $.getJSON('content.json', function(data) {
+                            var main = document.getElementById('main-content');
+                            var table = document.createElement('tr');
+                            table.id = "table"; 
+                            main.append(table);
+                            var a = 0
+                            for (i in data) {
+                                if (a == 14) {
+                                    table = document.createElement('tr')
+                                    table.id = "table";
+                                    main.append(table);
+                                    a = 0;
+                                }
+                                var cell = document.createElement('td');
+                                cell.id = "table-row";
+                                var link = document.createElement('a');
+                                link.href = data[i].path;
+                                var image = document.createElement('img');
+                                image.src = data[i].thumb;
+                                image.id = "table-image";
+                                image.title = i
+                                image.alt = i
+                                table.append(cell);
+                                cell.append(link);
+                                link.append(image);
+                                a++;
+                            }
+                        });
+                    })();
+                </script>
             </div>
             <div id="footer">
                 <div id="footer-text">
