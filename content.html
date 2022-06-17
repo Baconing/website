@@ -29,6 +29,17 @@
                             table.id = "table"; 
                             main.append(table);
                             var a = 0
+                            
+                            if (data == null || Object.keys(data).length == 0) {
+                                var header = document.createElement('h1');
+                                header.id = "animate";
+                                var text = document.createTextNode("i didnt make anything lol");
+                                header.append(text);
+                                main.append(header);
+                                return;
+                            }
+
+
                             for (i in data) {
                                 if (a == 14) {
                                     table = document.createElement('tr')
