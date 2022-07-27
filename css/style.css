@@ -129,6 +129,17 @@ body {
     height: 11em;
 }
 
+#image-link {
+    width: 3em;
+    height: 3em;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+#image-friend:hover {
+    opacity: .5;
+}
+
 #animate {
     animation: spin 3s linear 0s 2 normal none;
 }
