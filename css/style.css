@@ -4,7 +4,7 @@ body {
     font-family: "Fascinate", cursive;
     font-weight: bolder;
     color: white;
-    background-image: image("https://wallpaperaccess.com/full/86289.jpg");
+    background-image: url("https://wallpaperaccess.com/full/86289.jpg");
     user-select: none;
 }
 
