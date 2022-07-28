@@ -4,7 +4,7 @@ body {
     font-family: "Fascinate", cursive;
     font-weight: bolder;
     color: white;
-    background-color: teal;
+    background-image: image("https://wallpaperaccess.com/full/86289.jpg");
     user-select: none;
 }
 
@@ -104,6 +104,7 @@ body {
     width: 10em;
     height: 10em;
     border-radius: 15px;
+    border: 5px solid darkgoldenrod;
     animation: spin 3s linear 0s 2 normal none;
     transition: all 0.2s ease-in-out;
     margin: 5px;
