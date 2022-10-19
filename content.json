@@ -1,6 +1,14 @@
 {
     "this website": {
-        "link": "/",
+        "link": "https://baconing.tk/",
         "thumb": "img/websiteThumb.png"
-    } 
+    },
+    "8 ball": {
+        "link": "https://github.com/Baconing/8ball",
+        "thumb": "img/java.png"
+    },
+    "UnknownRealms (Admin/Manager/IT/Whatever)": {
+        "link": "https://unknownrealms.net",
+        "thumb": "img/unknownrealms.png"
+    }
 }
