@@ -3,7 +3,8 @@
 body {
     font-family: "Fascinate", cursive;
     font-weight: bolder;
-    color: black;
+    color: white;
+    background-color: black;
     background-image: url("https://wallpaperaccess.com/full/86289.jpg");
     user-select: none;
 }
